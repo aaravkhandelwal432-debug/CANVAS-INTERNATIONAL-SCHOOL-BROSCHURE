@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Canvas International Pre School | Best Play School in Dausa, Rajasthan</title>
+  <meta name="description" content="Canvas International Pre School is Dausa's best play school offering activity-based learning. Located at New Mandi Rd behind Durga Mandir. Call 8209909098.">
+  <meta name="keywords" content="Preschool in Dausa, Play School in Dausa, Canvas International Pre School Dausa, best play school dausa, activity based learning dausa">
+  <meta name="author" content="Canvas International Pre School">
+  <meta property="og:title" content="Canvas International Pre School Dausa | Best Play School">
+  <meta property="og:description" content="Discover Dausa's best play school. Canvas International Pre School works on Activity-Based Learning in a premium, safe, and joyful environment.">
+  <meta property="og:image" content="assets/building.jpg">
+  
+  <link rel="icon" href="https://www.canvasinternationalschool.com/favicon/favicon-32x32.png" type="image/png">
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- Background Three.js 3D Interactive Canvas -->
+  <canvas id="three-bg"></canvas>
+
+  <!-- Interactive Particles Canvas -->
+  <div class="bubbles-container" id="bubbles"></div>
+
+  <!-- Header Branding -->
+  <header class="main-header">
+    <div class="header-logo">
+      <img src="https://www.canvasinternationalschool.com/img/logo.png" alt="Canvas International Pre School Logo" class="brand-logo">
+      <div class="logo-text">
+        <span class="logo-main">CANVAS</span>
+        <span class="logo-sub">INTERNATIONAL PRE school</span>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <button class="nav-btn active" data-page="0">Cover</button>
+      <button class="nav-btn" data-page="1">About Us</button>
+      <button class="nav-btn" data-page="2">Programs</button>
+      <button class="nav-btn" data-page="3">Gallery</button>
+      <button class="nav-btn" data-page="4">Reviews</button>
+      <button class="nav-btn" data-page="5">Contact</button>
+    </nav>
+    <a href="tel:8209909098" class="call-action-btn">
+      <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>8209909098</span>
+    </a>
+  </header>
+
+  <!-- Interactive 3D Brochure Portal -->
+  <main class="portal-container">
+    <div class="instruction-banner">
+      <span class="sparkle">✨</span> Click or swipe pages to flip the 3D Brochure booklet! <span class="sparkle">✨</span>
+    </div>
+    
+    <div class="brochure-3d-wrapper">
+      <div class="book" id="brochure-book">
+        
+        <!-- PAGE 1 (Cover / Outer Front) -->
+        <div class="book-page active" id="page-1" style="z-index: 6;">
+          <div class="page-side front-side cover-page">
+            <div class="cover-design">
+              <div class="cover-accent-top"></div>
+              <div class="cover-badge">Dausa Branch</div>
+              <div class="cover-header">
+                <span class="cover-welcome">Welcome To</span>
+                <h1 class="school-name">Canvas</h1>
+                <p class="school-tag">International Pre School</p>
+              </div>
+              <div class="cover-illustration">
+                <div class="sun"></div>
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+                <div class="toy-train">🚂 🚋 🚋</div>
+              </div>
+              <div class="cover-bottom">
+                <div class="rating-strip">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-txt">5.0 Star Rated Play School</span>
+                </div>
+                <div class="flip-btn">Flip Open 📖</div>
+              </div>
+            </div>
+          </div>
+          <div class="page-side back-side">
+            <!-- Back of page 1: Left page of first fold (About Us) -->
+            <div class="page-content bg-pink">
+              <div class="page-header">
+                <h2>Who We Are</h2>
+                <div class="color-bar bar-yellow"></div>
+              </div>
+              <div class="page-body">
+                <p class="highlight-text">“Canvas International School works on Activities-based learning which no one teaches in Dausa.”</p>
+                <p class="body-desc">We are proud to provide a joyful, creative, and safe space where young children explore their natural curiosities. Our women-led institution empowers early learners with custom toys, visual arts, and modern play tools.</p>
+                <div class="feature-badges">
+                  <div class="badge-item">
+                    <span class="badge-icon">👩‍🏫</span>
+                    <span>Women Owned & Operated</span>
+                  </div>
+                  <div class="badge-item">
+                    <span class="badge-icon">🎨</span>
+                    <span>Activity-Based Curriculum</span>
+                  </div>
+                  <div class="badge-item">
+                    <span class="badge-icon">🧸</span>
+                    <span>Modern Play Zones</span>
+                  </div>
+                </div>
+              </div>
+              <div class="page-footer">
+                <span class="page-num">1</span>
+                <span class="next-hint">Flip Page →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 2 (Curriculum & Programs / Middle Spread) -->
+        <div class="book-page" id="page-2" style="z-index: 5;">
+          <div class="page-side front-side">
+            <!-- Front of page 2: Right page of first fold (Programs) -->
+            <div class="page-content bg-yellow">
+              <div class="page-header">
+                <h2>Our Fun Programs</h2>
+                <div class="color-bar bar-pink"></div>
+              </div>
+              <div class="page-body programs-grid">
+                <div class="program-card">
+                  <div class="program-icon pink-bg">🧸</div>
+                  <div class="program-info">
+                    <h3>Play Group</h3>
+                    <p>1.5 - 2.5 yrs | Sensory play, social skills, and movement blocks.</p>
+                  </div>
+                </div>
+                <div class="program-card">
+                  <div class="program-icon pink-bg">🎨</div>
+                  <div class="program-info">
+                    <h3>Nursery</h3>
+                    <p>2.5 - 3.5 yrs | Art expression, music, and pre-reading skills.</p>
+                  </div>
+                </div>
+                <div class="program-card">
+                  <div class="program-icon pink-bg">✏️</div>
+                  <div class="program-info">
+                    <h3>Junior KG</h3>
+                    <p>3.5 - 4.5 yrs | Basic math concept readiness, phonics, and literacy.</p>
+                  </div>
+                </div>
+                <div class="program-card">
+                  <div class="program-icon pink-bg">🧪</div>
+                  <div class="program-info">
+                    <h3>Senior KG</h3>
+                    <p>4.5 - 5.5 yrs | Early science exploration, advanced language, and math.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="page-footer">
+                <span class="prev-hint">← Back</span>
+                <span class="page-num">2</span>
+                <span class="next-hint">Flip Page →</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-side back-side">
+            <!-- Back of page 2: Left page of second fold (Gallery) -->
+            <div class="page-content bg-pink">
+              <div class="page-header">
+                <h2>Life at Canvas Dausa</h2>
+                <div class="color-bar bar-yellow"></div>
+              </div>
+              <div class="page-body gallery-container">
+                <div class="gallery-grid">
+                  <div class="gallery-photo-wrapper zoomable" onclick="openLightbox('assets/building.jpg', 'Canvas Preschool Campus')">
+                    <img src="assets/building.jpg" alt="Canvas Pre School Building Dausa" class="gallery-img">
+                    <div class="img-caption">Our Campus</div>
+                  </div>
+                  <div class="gallery-photo-wrapper zoomable" onclick="openLightbox('assets/group.jpg', 'Happy Canvas Pre-Schoolers')">
+                    <img src="assets/group.jpg" alt="Canvas Pre School Students" class="gallery-img">
+                    <div class="img-caption">Classroom Group</div>
+                  </div>
+                  <div class="gallery-photo-wrapper zoomable" onclick="openLightbox('assets/plantation.jpg', 'Eco Club - Aloe Vera Gardening')">
+                    <img src="assets/plantation.jpg" alt="Canvas Pre School Plantation Activity" class="gallery-img">
+                    <div class="img-caption">Plantation Drive</div>
+                  </div>
+                  <div class="gallery-photo-wrapper zoomable" onclick="openLightbox('assets/activities.jpg', 'Creative Classroom Activities')">
+                    <img src="assets/activities.jpg" alt="Canvas Pre School Student Activities" class="gallery-img">
+                    <div class="img-caption">Activity Class</div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-footer">
+                <span class="page-num">3</span>
+                <span class="next-hint">Flip Page →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGE 3 (Reviews & Admissions / Outer Back) -->
+        <div class="book-page" id="page-3" style="z-index: 4;">
+          <div class="page-side front-side">
+            <!-- Front of page 3: Right page of second fold (Reviews) -->
+            <div class="page-content bg-yellow">
+              <div class="page-header">
+                <h2>Parent Reviews</h2>
+                <div class="color-bar bar-pink"></div>
+              </div>
+              <div class="page-body reviews-list">
+                <div class="rating-summary">
+                  <div class="huge-stars">5.0</div>
+                  <div class="review-stars-icon">⭐⭐⭐⭐⭐</div>
+                  <div class="review-count">Based on 6 Google Maps reviews</div>
+                </div>
+                
+                <div class="review-bubble scrollable-reviews">
+                  <div class="review-card">
+                    <p class="review-comment">“Dausa's Best Play School, Canvas International School works on Activities based learning which no one teaches in dausa”</p>
+                    <span class="review-author">★ Google Local Guide (Dausa)</span>
+                  </div>
+                  <div class="review-card">
+                    <p class="review-comment">“Best pre school in Dausa”</p>
+                    <span class="review-author">★ Local Parent Review</span>
+                  </div>
+                  <div class="review-card">
+                    <p class="review-comment">“Perfect school”</p>
+                    <span class="review-author">★ Ashish Khandelwal</span>
+                  </div>
+                </div>
+              </div>
+              <div class="page-footer">
+                <span class="prev-hint">← Back</span>
+                <span class="page-num">4</span>
+                <span class="next-hint">Contact Us →</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-side back-side contact-page">
+            <!-- Back of page 3: Back Cover Page -->
+            <div class="page-content bg-gradient-pink-yellow">
+              <div class="cover-accent-top"></div>
+              <div class="page-header center-align">
+                <h2>Enroll Today!</h2>
+                <p class="sub-head">Let's craft your child's canvas together</p>
+              </div>
+              
+              <div class="page-body contact-content">
+                <form id="inquiry-form" class="inquiry-form" onsubmit="handleInquirySubmit(event)">
+                  <div class="form-group">
+                    <input type="text" id="parent-name" placeholder="Parent's Name" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" id="parent-phone" placeholder="Phone Number" required>
+                  </div>
+                  <div class="form-group">
+                    <select id="branch-select" required>
+                      <option value="" disabled selected>Select Campus Branch</option>
+                      <option value="raja-colony">Raja Colony Campus (Durga Mandir)</option>
+                      <option value="teachers-colony">Teacher's Colony Campus (Gupteshwar Rd)</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select id="child-age" required>
+                      <option value="" disabled selected>Child's Age Group</option>
+                      <option value="playgroup">Playgroup (1.5 - 2.5 yrs)</option>
+                      <option value="nursery">Nursery (2.5 - 3.5 yrs)</option>
+                      <option value="lkg">Junior KG / LKG (3.5 - 4.5 yrs)</option>
+                      <option value="ukg">Senior KG / UKG (4.5 - 5.5 yrs)</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="submit-btn pink-bg-solid">Send Admission Inquiry 🚀</button>
+                </form>
+
+                <div class="contact-details scrollable-contacts">
+                  <div class="branch-detail">
+                    <strong>📍 Raja Colony Campus</strong>
+                    <p>New Mandi Rd, behind Durga Mandir, Raja Colony, Dausa</p>
+                    <p>📞 <a href="tel:8209909098">8209909098</a></p>
+                  </div>
+                  <div class="branch-detail" style="margin-top: 10px; border-top: 1px dashed rgba(0,0,0,0.1); padding-top: 10px;">
+                    <strong>📍 Teacher's Colony Campus</strong>
+                    <p>Gupteshwar Road, Tudiyana, Dausa, Rajasthan 303303</p>
+                    <p>📞 <a href="tel:8209909098">8209909098</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="page-footer">
+                <span class="prev-hint">← Back to Reviews</span>
+                <span class="page-num">5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Manual Flip Controls -->
+    <div class="book-controls">
+      <button class="control-btn" id="prev-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Previous Page</span>
+      </button>
+      <div class="control-indicator">
+        Page <span id="current-page-num">1</span> of 6
+      </div>
+      <button class="control-btn" id="next-btn">
+        <span>Next Page</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+    </div>
+  </main>
+
+  <!-- Walkthrough and Information Section (For SEO & scroll effects validation) -->
+  <section class="info-section">
+    <div class="info-container">
+      <div class="info-grid">
+        
+        <div class="info-card">
+          <div class="info-card-icon">⭐</div>
+          <h3>Dausa's Top Choice</h3>
+          <p>Canvas International Pre School is rated 5.0 stars on Google Maps. We maintain a loving and safe environment with top-notch infrastructure designed for early learning excellence.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🧠</div>
+          <h3>Activity-Based Focus</h3>
+          <p>Traditional learning focuses on memory, but our curriculum centers entirely around kids experimenting, creating, painting, and building. We spark active brain development from day one.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">📍</div>
+          <h3>Our Campuses in Dausa</h3>
+          <p style="margin-bottom: 12px; font-size: 0.9rem;">
+            <strong>Raja Colony Campus:</strong> Behind Durga Mandir, New Mandi Rd. 
+            <a href="https://www.google.com/maps/search/?api=1&query=Canvas+International+Pre+School+Dausa" target="_blank" class="map-link" style="display: inline; margin-top: 0;">Directions 🗺️</a>
+          </p>
+          <p style="font-size: 0.9rem;">
+            <strong>Teacher's Colony Campus:</strong> Gupteshwar Road, Tudiyana. 
+            <a href="https://www.google.com/maps/search/?api=1&query=The+Ashram+Kids+Zone+Dausa" target="_blank" class="map-link" style="display: inline; margin-top: 0;">Directions 🗺️</a>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Inquiry Modal (Success Message) -->
+  <div class="modal" id="success-modal">
+    <div class="modal-content">
+      <div class="modal-icon">🎉</div>
+      <h2>Thank You!</h2>
+      <p>Your admission inquiry has been received. Our team from the Dausa campus will contact you shortly via phone.</p>
+      <button class="modal-close" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div class="lightbox" id="image-lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Zoomed view">
+      <h3 id="lightbox-title"></h3>
+      <span class="lightbox-close">&times;</span>
+    </div>
+  </div>
+
+  <!-- Custom Javascript -->
+  <script src="index.js"></script>
+</body>
+</html>
