@@ -474,12 +474,16 @@ function closeModal() {
   const modal = document.getElementById('success-modal');
   modal.classList.remove('active');
   
-  // Redirect to WhatsApp if url is set
+  // Redirect to WhatsApp using window.location.href (bypasses popup blockers)
   if (pendingRedirectUrl) {
-    window.open(pendingRedirectUrl, '_blank');
+    window.location.href = pendingRedirectUrl;
     pendingRedirectUrl = "";
   }
 }
+
+// Explicitly bind functions to window to prevent scoping issues in inline HTML
+window.handleInquirySubmit = handleInquirySubmit;
+window.closeModal = closeModal;
 
 
 // --- GALLERY LIGHTBOX ---
