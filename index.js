@@ -433,8 +433,34 @@ window.addEventListener('load', () => {
 
 // --- FORM INTERACTION ---
 
+let pendingRedirectUrl = "";
+
 function handleInquirySubmit(event) {
   event.preventDefault();
+  
+  const parentName = document.getElementById('parent-name').value;
+  const parentPhone = document.getElementById('parent-phone').value;
+  const branchSelect = document.getElementById('branch-select');
+  const branchText = branchSelect.options[branchSelect.selectedIndex].text;
+  const childAgeSelect = document.getElementById('child-age');
+  const childAgeText = childAgeSelect.options[childAgeSelect.selectedIndex].text;
+  
+  // Format the WhatsApp message text
+  const message = `Hello Canvas International Pre School Dausa! I would like to inquire about admission for my child.
+
+*Parent Details:*
+- Name: ${parentName}
+- Phone: ${parentPhone}
+- Selected Branch: ${branchText}
+- Age Group: ${childAgeText}
+
+Looking forward to your response!`;
+
+  // Encode message for URL query
+  const encodedMessage = encodeURIComponent(message);
+  
+  // Open WhatsApp Link (number: 8209909098, country code: 91)
+  pendingRedirectUrl = `https://wa.me/918209909098?text=${encodedMessage}`;
   
   // Reset Form
   document.getElementById('inquiry-form').reset();
@@ -447,6 +473,12 @@ function handleInquirySubmit(event) {
 function closeModal() {
   const modal = document.getElementById('success-modal');
   modal.classList.remove('active');
+  
+  // Redirect to WhatsApp if url is set
+  if (pendingRedirectUrl) {
+    window.open(pendingRedirectUrl, '_blank');
+    pendingRedirectUrl = "";
+  }
 }
 
 
